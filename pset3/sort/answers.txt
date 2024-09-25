@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Python File Link: /workspaces/26224835/CS50x/sort/datadiagram.py & /workspaces/26224835/CS50x/sort/real_time_sorting.csv & /workspaces/26224835/CS50x/sort/sorting_times.csv & /workspaces/26224835/CS50x/sort/sys_time_sorting.csv & /workspaces/26224835/CS50x/sort/user_time_sorting.csv
+
+sort2 uses: Merge Sort
+
+How do you know?: Python File Link: /workspaces/26224835/CS50x/sort/datadiagram.py & /workspaces/26224835/CS50x/sort/real_time_sorting.csv & /workspaces/26224835/CS50x/sort/sorting_times.csv & /workspaces/26224835/CS50x/sort/sys_time_sorting.csv & /workspaces/26224835/CS50x/sort/user_time_sorting.csv
+
+sort3 uses: Selection Sort
+
+How do you know?: Python File Link: /workspaces/26224835/CS50x/sort/datadiagram.py & /workspaces/26224835/CS50x/sort/real_time_sorting.csv & /workspaces/26224835/CS50x/sort/sorting_times.csv & /workspaces/26224835/CS50x/sort/sys_time_sorting.csv & /workspaces/26224835/CS50x/sort/user_time_sorting.csv | based on data and diagrams normally sort 2 is the fast one, sort 1 is the slowest and sort 3 is for selection becasue of it is okay with not huge data
