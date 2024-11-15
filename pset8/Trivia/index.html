@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+    <script>
+        function checkMultipleChoice(answer, correctAnswer, resultId) {
+            if (answer === correctAnswer) {
+                document.getElementById(resultId).innerHTML = "Correct!";
+                document.getElementById(resultId).style.color = "green";
+            } else {
+                document.getElementById(resultId).innerHTML = "Incorrect";
+                document.getElementById(resultId).style.color = "red";
+            }
+        }
+
+        function checkFreeResponse() {
+            var userAnswer = document.getElementById('freeResponseAnswer').value.toLowerCase();
+            var correctAnswer = "tokyo";
+            var resultId = 'freeResponseResult';
+            if (userAnswer === correctAnswer) {
+                document.getElementById(resultId).innerHTML = "Correct!";
+                document.getElementById(resultId).style.color = "green";
+                document.getElementById('freeResponseAnswer').style.backgroundColor = "green";
+            } else {
+                document.getElementById(resultId).innerHTML = "Incorrect";
+                document.getElementById(resultId).style.color = "red";
+                document.getElementById('freeResponseAnswer').style.backgroundColor = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Part 1: Multiple Choice </h2>
+            <hr>
+            <h3>What is the capital of France?</h3>
+            <button onclick="checkMultipleChoice('Paris', 'Paris', 'result1')">Paris</button>
+            <button onclick="checkMultipleChoice('London', 'Paris', 'result1')">London</button>
+            <button onclick="checkMultipleChoice('Berlin', 'Paris', 'result1')">Berlin</button>
+            <div id="result1"></div>
+        </div>
+
+        <div class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <h3>What is the capital of Japan?</h3>
+            <input type="text" id="freeResponseAnswer">
+            <button onclick="checkFreeResponse()">Submit</button>
+            <div id="freeResponseResult"></div>
+        </div>
+    </div>
+</body>
+</html>
