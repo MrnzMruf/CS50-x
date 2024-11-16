@@ -1,0 +1,46 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #007bff;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #495057;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+}
+
+.container {
+    margin-top: 20px;
+    text-align: center;
+    width: 33%;
+    margin: 0 auto;
+}
+
+.dropdown-menu {  
+    display: none;  
+}  
+
+.dropdown:hover .dropdown-menu {  
+    display: block; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+  
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
