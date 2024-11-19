@@ -10,31 +10,30 @@
         <thead class="thead-light">
             <tr>
                 <th>Symbols</th>
-                <th>name</th>
+                <th>Name</th>
                 <th>Shares</th>
                 <th>Price</th>
-                <th>TOTAL</th>
+                <th>Total</th>
             </tr>
         </thead>
         <tbody>
-            {% for row in database %}
+            {% for stock in stocks %}
                 <tr>
                     <td>{{ stock.symbol }}</td>
                     <td>{{ stock.name }}</td>
                     <td>{{ stock.total_shares }}</td>
-                    <td>{{ stock.price }}</td>
-                    <td>{{ stock.price * stock.total_shares }}</td>
+                    <td>{{ stock.price | usd }}</td>
+                    <td>{{ stock.value | usd }}</td>
                 </tr>
             {% endfor %}
             <tr>
                 <td colspan="4" align="right">Cash</td>
-                <td>{{ cash }}</td>
+                <td>{{ cash | usd }}</td>
             </tr>
             <tr>
                 <td colspan="4" align="right">Total Value</td>
-                <td>{{ total_value }}</td>
+                <td>{{ total_value | usd }}</td>
             </tr>
         </tbody>
     </table>
-
 {% endblock %}
