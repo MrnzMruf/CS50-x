@@ -1,0 +1,19 @@
+{% extends "layout.html" %}  
+
+{% block title %}Quote for {{ symbol }}{% endblock %}  
+
+{% block main %}  
+<h2>Quote for {{ symbol }}</h2>  
+<p>Name: {{ name }}</p>  
+<p>Price: ${{ price }}</p>  
+
+<h3>Buy Shares</h3>  
+<form action="{{ url_for('buy') }}" method="POST">  
+    <input type="hidden" name="symbol" value="{{ symbol }}">  
+    <div>  
+        <label for="shares">Number of Shares:</label>  
+        <input type="number" name="shares" min="1" required>  
+    </div>  
+    <button type="submit">Buy</button>  
+</form>  
+{% endblock %}
