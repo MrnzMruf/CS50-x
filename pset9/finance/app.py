@@ -1,6 +1,8 @@
-from flask import Flask, flash, redirect, render_template, request, session  
+from flask import Flask, flash, redirect, render_template, request, session
+from flask_session import Session
 from werkzeug.security import generate_password_hash, check_password_hash  
 import datetime  
+from cs50 import SQL  
 from functools import wraps  
 from tempfile import mkdtemp
 from helpers import apology, login_required, lookup, usd
